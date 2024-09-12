@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://images8.alphacoders.com/134/thumb-1920-1342150.jpeg');
+    background-size: cover;
+    background-position: top left bottom right left right top bottom;
+    color: #ececec;
+}
+
+.calendar-container {
+    width: 400px;
+    margin: 40px auto;
+    background: rgba(26, 26, 26, 0.7);
+    border-radius: 20px;
+    padding: 10px; 
+
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#month-year {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+button {
+    background: none;
+    border: none;
+    color: #cecece;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #ccc;
+}
+
+.days-of-week {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background: #817f7f;
+    padding: 5px 0;
+}
+
+.days-of-week div {
+    text-align: center;
+    padding: 5px;
+}
+
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.calendar-days div {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #b3abab;
+}
+
+.calendar-days .today {
+    background: rgb(35, 11, 46);
+    color: #b3abab;
+    border-radius: 50%;
+}
